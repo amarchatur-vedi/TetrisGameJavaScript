@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const width = 10 ;
     let nextRandom = 0;
     let timerId;
+    const colors = ["#1aff1a","#4d79ff","#ff0066","#ffff00","#cc00ff"];
 
 
   //The Tetrominoes
@@ -75,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () =>{
    function draw() {
     current.forEach(index => {
       squares[currentPosition + index].classList.add('tetromino');
+      //squares[currentPosition + index].style.backgroundColor = colors[random];
     });
   }
 
@@ -91,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     clearInterval(temp);
     j=1;
   } else{
-    temp = setInterval(moveDown,500);
+    temp = setInterval(moveDown,1000);
       j=0;
      }
       
@@ -110,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   function unDraw() {
     current.forEach(index => {
       squares[currentPosition + index].classList.remove('tetromino');
+      //squares[currentPosition + index].style.backgroundColor = "yellow";
     });
   }
 
@@ -154,6 +157,7 @@ document.addEventListener('DOMContentLoaded', () =>{
 //rotate function
 
 function rotate(){
+  
     unDraw();
     currentRotation++;
     if(currentRotation === 4){
