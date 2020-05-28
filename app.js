@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () =>{
    function draw() {
     current.forEach(index => {
       squares[currentPosition + index].classList.add('tetromino');
-      //squares[currentPosition + index].style.backgroundColor = colors[random];
+      squares[currentPosition + index].style.backgroundColor = colors[random];
     });
   }
 
@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () =>{
   function unDraw() {
     current.forEach(index => {
       squares[currentPosition + index].classList.remove('tetromino');
-      //squares[currentPosition + index].style.backgroundColor = "yellow";
+      squares[currentPosition + index].style.backgroundColor = "yellow";
     });
   }
 
