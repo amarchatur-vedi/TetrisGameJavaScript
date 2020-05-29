@@ -7,7 +7,8 @@
     height: 400px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: black;
+    border-radius: 5px;
 }
 
 .grid div{
@@ -27,7 +28,8 @@
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: black;
+    border-radius: 5px;
 }
 
 .small-grid div{
@@ -53,3 +55,24 @@
     font-weight: bolder;
 }
 
+
+/*--------------------------------------- Controller Style Section -----------------------------------------------*/
+.controller{
+    width: 120px;
+    height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.controller div{
+    width: 40px;
+    height: 40px;
+}
+
+.controller div button{
+    font-size: 20px;
+    color: blue;
+    background-color: black;
+    margin-top: 8rem;
+    margin-left: -6rem;
+}
