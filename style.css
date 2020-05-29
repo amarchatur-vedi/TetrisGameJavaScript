@@ -64,6 +64,14 @@
     display: flex;
     flex-wrap: wrap;
     z-index: 999;
+    margin-top: -15rem;
+    margin-left: 15rem;
+    
+}
+
+#upArrowKey{
+    font-size: 15px;
+    padding: 5px;
 }
 
 .controller div{
@@ -75,6 +83,4 @@
     font-size: 20px;
     color: blue;
     background-color: black;
-    margin-top: 0%;
-    margin-left: 15rem;
 }
