@@ -209,7 +209,7 @@ function addScore(){
 
 function gameOver(){
   if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
-  document.getElementById('score').innerHTML = 'end';
+  document.getElementById('score').innerHTML = '  Game Over !!!';
   current.forEach(index => squares[currentPosition + index].classList.add('end'))
   clearInterval(temp);
   }
