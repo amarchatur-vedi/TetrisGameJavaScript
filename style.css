@@ -65,7 +65,7 @@
     flex-wrap: wrap;
     z-index: 999;
     margin-top: -15rem;
-    margin-left: 15rem;
+    margin-left: 14rem;
     
 }
 
@@ -80,7 +80,9 @@
 }
 
 .controller div button{
-    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
     color: blue;
     background-color: black;
 }
