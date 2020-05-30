@@ -7,6 +7,16 @@
     let nextRandom = 0;
     let timerId;
     const colors = ["#1aff1a","#4d79ff","#ff0066","#ffff00","#cc00ff"];
+    const gameOverDisplay = [
+                              [1,2,3,4,10,20,23,24,30,34,41,42,43,44],
+                              [51,52,53,60,64,70,71,72,73,74,80,84,90,94],
+                              [100,104,110,111,113,114,120,122,124,130,134,140,144],
+                              [151,152,153,154,160,170,171,172,173,180,191,192,193,194],
+                              [7,8,16,19,26,29,36,39,47,48],
+                              [56,59,66,69,76,79,87,89,98],
+                              [107,108,109,116,126,127,128,129,136,147,148,149],
+                              [156,157,158,166,169,176,179,186,187,188,196,199]
+                            ];
 
 
   //The Tetrominoes
@@ -209,9 +219,19 @@ function addScore(){
 
 function gameOver(){
   if(current.some(index => squares[currentPosition + index].classList.contains('taken'))){
-  document.getElementById('score').innerHTML = '  Game Over !!!';
   current.forEach(index => squares[currentPosition + index].classList.add('end'))
   clearInterval(temp);
+  for(let i = 0; i<200; i++){
+    squares[i].style.backgroundColor = "black";
+  }
+  gameOverDisplay[0].forEach(index => squares[index].style.backgroundColor = "blue");
+  gameOverDisplay[1].forEach(index => squares[index].style.backgroundColor = "yellow");
+  gameOverDisplay[2].forEach(index => squares[index].style.backgroundColor = "blue");
+  gameOverDisplay[3].forEach(index => squares[index].style.backgroundColor = "pink");
+  gameOverDisplay[4].forEach(index => squares[index].style.backgroundColor = "pink");
+  gameOverDisplay[5].forEach(index => squares[index].style.backgroundColor = "blue");
+  gameOverDisplay[6].forEach(index => squares[index].style.backgroundColor = "yellow");
+  gameOverDisplay[7].forEach(index => squares[index].style.backgroundColor = "blue");
   }
 }
 
