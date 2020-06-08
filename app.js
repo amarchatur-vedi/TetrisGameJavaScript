@@ -103,7 +103,7 @@
     clearInterval(temp);
     j=1;
   } else{
-    temp = setInterval(moveDown,1000);
+    temp = setInterval(moveDown,500);
       j=0;
      }
       
